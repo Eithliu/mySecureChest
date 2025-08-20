@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-import SignUp from './components/SignUp.vue';
-import HomePage from './components/HomePage.vue';
+import { ref } from "vue";
+import SignUp from "./components/SignUp.vue";
+import HomePage from "./components/HomePage.vue";
 
 const isHomePage = ref(false);
 const isSignUpPage = ref(true);
@@ -19,9 +19,7 @@ function showHomePage() {
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
 <style>
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
