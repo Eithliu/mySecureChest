@@ -1,43 +1,38 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
-import GeneratorSection from './GeneratorSection.vue';
+import GeneratorSection from "./GeneratorSection.vue";
 
 const isGenerator = ref(false);
 
 function displayGenerator() {
-    isGenerator.value = true;
+  isGenerator.value = true;
 }
 </script>
 
 <template>
-<h1>Hello !</h1>
+  <h1>Bienvenue dans votre coffre</h1>
   <nav class="navigation">
     <ul>
       <li>
-        <button @click="displayIdPage">
-          Identifiants
-        </button>
+        <button @click="displayIdPage">Coffre</button>
       </li>
       <li>
-        <button @click="displayIdCreation">
-          Créer un identifiant
-        </button>
+        <button @click="displayIdCreation">+ Créer</button>
       </li>
       <li>
-        <button @click="displayGenerator">
-          Générer un mot de passe
-        </button>
+        <button @click="displayGenerator">Générer un mot de passe</button>
       </li>
     </ul>
   </nav>
-  <GeneratorSection v-if="isGenerator" :isGenerator=true />
+  <GeneratorSection v-if="isGenerator" :isGenerator="true" />
 </template>
 
 <style scoped>
 ul {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
   gap: 1.2rem;
 }
 

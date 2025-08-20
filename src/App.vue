@@ -39,12 +39,12 @@ function showHomePage() {
 
 .container {
   margin: 0;
-  padding-top: 10vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   gap: 1rem;
+  height: 600px;
 }
 
 .logo {
